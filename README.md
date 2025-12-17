@@ -37,6 +37,31 @@ xputop
 
 This launches `xpu_monitor.py` which by default tries `xpumcli` first and falls back to `xpu-smi`. The output stays within a single screen and updates until you press `Ctrl+C`.
 
+### Sample output
+```
+Intel XPU Monitor — Last update: 23:36:50.211
+Press CTRL+C to exit. Source: xpumcli dump
+
+Intel(R) Data Center GPU Max 1550 (ID 0)
+  Mem  22.78 GiB / 128.00 GiB | ████████████████████████████████████████████████████████████  17.8%
+  Power  355.7 W | Temp  49.1 °C
+————————————————————————————————————————————————————————————————————————————————————————————————————
+
+Intel(R) Data Center GPU Max 1550 (ID 1)
+  Mem  25.52 GiB / 128.00 GiB | ████████████████████████████████████████████████████████████  19.9%
+  Power  378.8 W | Temp  50.5 °C
+————————————————————————————————————————————————————————————————————————————————————————————————————
+
+Intel(R) Data Center GPU Max 1550 (ID 2)
+  Mem   2.67 GiB / 128.00 GiB | ████████████████████████████████████████████████████████████   2.1%
+  Power  306.1 W | Temp  47.0 °C
+————————————————————————————————————————————————————————————————————————————————————————————————————
+
+Intel(R) Data Center GPU Max 1550 (ID 3)
+  Mem  57.15 GiB / 128.00 GiB | ████████████████████████████████████████████████████████████  44.6%
+  Power  295.5 W | Temp  48.0 °C
+```
+
 ### Useful flags
 - `xputop --cmd xpu-smi` — explicitly pick the backend executable.
 - `xputop --metrics 18,5,1,3` — pass a comma-separated list of XPUM metric IDs to match your toolkit.
