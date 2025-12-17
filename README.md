@@ -1,6 +1,6 @@
 # xpu-top
 
-Lightweight terminal dashboard for Intel XPUs that mimics the experience of `nvidia-smi`/`top`. It wraps `xpumcli` or `xpu-smi` (whichever is available) and renders colorful memory, power, and temperature bars in-place inside your terminal.
+Lightweight terminal dashboard for Intel XPUs that mimics the experience of `nvidia-smi`. It wraps `xpumcli` or `xpu-smi` (whichever is available) and renders colorful memory, power, and temperature bars in-place inside your terminal.
 
 ## Features
 - Auto-discovers `xpumcli` or `xpu-smi`, or accept a manual `--cmd` override.
